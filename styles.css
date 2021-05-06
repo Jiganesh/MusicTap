@@ -1,0 +1,73 @@
+*{
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+}
+
+#app{
+    display:flex;
+    height: 100vh;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Itim', cursive;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+}
+
+#text{
+    background-color: rgb(216, 216, 216,0.3);
+    padding:25px;
+    margin-top:50px;
+    box-shadow: 10px 10px gray, -10px -10px black;
+}
+#title{
+    margin-bottom:20px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.pads{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+.pads>div{
+    height: 200px;
+    flex: 1;
+}
+
+#pad1{background-color:#72147e}
+#pad2{background-color:#f21170}
+#pad3{background-color: #fa9905;}
+#pad4{background-color: #ff5200;}
+#pad5{background-color: #a799b7}
+#pad6{background-color:#81b214}
+
+
+@media screen and (max-width:800px){
+
+    #text{
+        background-color: rgb(216, 216, 216,0.3);
+        padding:10px;
+        margin-top:20px;
+        box-shadow: 10px 10px gray, -10px -10px black;
+    }
+    .pads{
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pads>div{
+        height:150px;
+        flex:basis;
+    }
+    
+}
